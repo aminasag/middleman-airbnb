@@ -4,9 +4,38 @@ title: Le Wagon - Middleman
 
 <div class="banner">
   <div class="banner-content">
-    <h1>Le Wagon Berlin</h1>
-    <p>Learn to code with us in Berlin</p>
+    <h1>Welcome Home</h1>
+    <p>Book unique homes and experience a city like a local.</p>
   <!--   <a class="btn btn-primary btn-lg" href="team.html.erb">See Our Team</a> -->
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="form-group">
+        <input type="text" class="form-control" id="where" placeholder="Where?">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+      <div class="form-group">
+        <input type="text" class="form-control" id="when" placeholder="When?">
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" style="color:grey">
+      <select class="form-group" name="guest">
+        <option class="form-control" value="1 guest">1 guest</option>
+        <option class="form-control" value="2 guests">2 guests</option>
+        <option class="form-control" value="3 guests">3 guests</option>
+      </select>
+    </div>
+
+    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3" >
+      <%= link_to "Search", "#", class: "btn btn-primary" %>
+    </div>
+
+  </div>
+
+
   <%= link_to "Meet the team", "team.html", class: "btn btn-primary" %>
   </div>
 </div>
